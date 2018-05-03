@@ -208,6 +208,7 @@ Table=[dbo].[Stores];
     <Folder Include="Schema-Model\" />
     <Folder Include="Schema-Model\dbo\" />
     <Folder Include="Schema-Model\dbo\Tables\" />
+    <Folder Include="Migrations\1.0.1" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
