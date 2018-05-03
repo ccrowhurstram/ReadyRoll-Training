@@ -43,6 +43,7 @@ Table=[dbo].[Products];
 Table=[dbo].[Categories];
 Table=[dbo].[Stores];
 </IncludeObjectsInDataSync>
+    <DeployChangesInitialImportDone>True</DeployChangesInitialImportDone>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>

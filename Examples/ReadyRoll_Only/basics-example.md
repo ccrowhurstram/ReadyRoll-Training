@@ -27,7 +27,7 @@ The end result: a single migration script Migrations\1.0.1\001_Support_GBP.sql
 1. Complete scenario 1
 2. Replace all the script files in 'Migrations\1.0.1' with a single script named '001_Support_GBP.sql'
 3. Verify your changes:
-    1. Use the ReadyRoll 'Refresh' button (you should see no changes reported by ReadyRoll)
+    1. Use the ReadyRoll **'Refresh'** button (you should see no changes reported by ReadyRoll)
     2. (Optional) Drop the `PartsUnlimited_Dev` database and redeploy (eg Build > Deploy Solution) (you *might* want to do this to gain more reasurance)
 
 
@@ -41,8 +41,34 @@ In this scenario you will *repeat* scenario 1 but this time using SQL Server Man
 
 **Steps**
 
-1. Reset your environment (if you have worked through scenario 1 above):
+1. Reset your environment (if you have worked through scenario 1 and/or 2 above):
     1. Undo any changes you may have made in scenario 1
     2. Drop the `PartsUnlimited_Dev` database
     3. Redeploy the database (eg Build > Deploy Solution)
 2. Repeat the changes you made in scenario 1 (Task 4-6), but this time make the changes using SQL Server Management Studio
+
+
+## Scenario 4
+
+This scenario builds on scenario 1 (or 2). You will add a view to the database (a programmatic object). You will add the view directly to the database and then use ReadyRoll to import a Programmatic object migration script
+
+**Steps**
+
+1. Complete scenario 1 if you haven't already
+2. Use SQL Server Management Studio to create a view named `vwProduct`. It should have the following body: `SELECT * FROM dbo.Products`
+3. Back in ReadyRoll:
+    1. click **'Import and generate script'**
+    2. click **'Refresh'** to verify the script
+
+## Scenario 5
+
+This scenario builds on scenario 4. You will make a change to the view you created in scenario 4. You make this change in the ReadyRoll script and use ReadyRoll to deploy this change to your dev database
+
+**Steps**
+
+1. Complete scenario 4 if you haven't already
+2. In the ReadyRoll database project:
+    1. open the script Programmable Objects\dbo\Views\vwProducts.sql
+    2. Modify the script, replacing the `SELECT *` with an explicit list of columns
+    3. Click **'Deploy Project'**
+    4. click **'Refresh'** to verify the script
