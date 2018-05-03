@@ -42,7 +42,7 @@
 Table=[dbo].[Products];
 Table=[dbo].[Categories];
 Table=[dbo].[Stores];
-    </IncludeObjectsInDataSync>
+</IncludeObjectsInDataSync>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -217,6 +217,7 @@ Table=[dbo].[Stores];
   </ItemGroup>
   <ItemGroup>
     <None Include="Migrations\1.0.0\001_initial-baseline_ccrowhurst.sql" />
+    <None Include="Migrations\1.0.0\002_initial-baseline-data_ccrowhurst.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Schema-Model\dbo\Tables\AspNetRoleClaims.sql" />
