@@ -36,8 +36,13 @@
     <DeployOnceUseSemver>True</DeployOnceUseSemver>
     <SemverInitialBaseline>True</SemverInitialBaseline>
     <DeployChangesForProgrammableObjects>True</DeployChangesForProgrammableObjects>
-	<TargetDatabase>PartsUnlimited_Dev</TargetDatabase>
-<DefaultConnectionString>Data Source=(localdb)\ProjectsV13;Initial Catalog=PartsUnlimited_Dev;Integrated Security=True;Connect Timeout=60;</DefaultConnectionString>
+    <TargetDatabase>PartsUnlimited_Dev</TargetDatabase>
+    <DefaultConnectionString>Data Source=(localdb)\ProjectsV13;Initial Catalog=PartsUnlimited_Dev;Integrated Security=True;Connect Timeout=60;</DefaultConnectionString>
+    <IncludeObjectsInDataSync>
+Table=[dbo].[Products];
+Table=[dbo].[Categories];
+Table=[dbo].[Stores];
+    </IncludeObjectsInDataSync>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
