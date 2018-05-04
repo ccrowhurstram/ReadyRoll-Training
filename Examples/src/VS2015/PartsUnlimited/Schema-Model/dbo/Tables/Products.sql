@@ -6,13 +6,14 @@ CREATE TABLE [dbo].[Products]
 [Description] [nvarchar] (max) NOT NULL,
 [Inventory] [int] NOT NULL,
 [LeadTime] [int] NOT NULL,
-[Price] [decimal] (18, 2) NOT NULL,
+[PriceUSD] [decimal] (18, 2) NOT NULL,
 [ProductArtUrl] [nvarchar] (1024) NOT NULL,
 [ProductDetails] [nvarchar] (max) NOT NULL,
 [RecommendationId] [int] NOT NULL,
 [SalePrice] [decimal] (18, 2) NOT NULL,
 [SkuNumber] [nvarchar] (max) NOT NULL,
-[Title] [nvarchar] (160) NOT NULL
+[Title] [nvarchar] (160) NOT NULL,
+[PriceGBP] [decimal] (18, 2) NULL
 )
 GO
 ALTER TABLE [dbo].[Products] ADD CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED  ([ProductId])
