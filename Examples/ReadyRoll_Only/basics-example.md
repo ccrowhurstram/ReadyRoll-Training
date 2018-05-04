@@ -35,7 +35,7 @@ The end result: a single migration script Migrations\1.0.1\001_Support_GBP.sql
 
 Scenario 1 uses *two methods* to make changes to the database:
 * add scripts directly to ReadyRoll database project; use ReadyRoll to deploy these changes against the database (see Task 4 and 6)
-* make changes directory to the database and use ReadyRoll to import the changes as a script (see Task 5)
+* make changes directly to the database and use ReadyRoll to import the changes as a script (see Task 5)
 
 In this scenario you will *repeat* scenario 1 but this time using SQL Server Management Studio to make all the changes directly to the database and import them using ReadRoll as script(s)
 

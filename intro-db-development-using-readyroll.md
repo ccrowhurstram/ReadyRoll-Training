@@ -1,4 +1,4 @@
-# Introduction to database development using readyroll
+# Database development using readyroll
 
 ## Problems we're trying to solve
 
