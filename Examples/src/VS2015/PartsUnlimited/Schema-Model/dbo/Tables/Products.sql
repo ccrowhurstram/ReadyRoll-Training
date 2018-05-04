@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[Products]
 [SalePrice] [decimal] (18, 2) NOT NULL,
 [SkuNumber] [nvarchar] (max) NOT NULL,
 [Title] [nvarchar] (160) NOT NULL,
-[PriceGBP] [decimal] (18, 2) NULL
+[PriceGBP] [decimal] (18, 2) NOT NULL
 )
 GO
 ALTER TABLE [dbo].[Products] ADD CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED  ([ProductId])

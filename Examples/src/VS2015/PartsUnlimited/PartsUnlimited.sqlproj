@@ -238,12 +238,6 @@ Table=[dbo].[Stores];
     <None Include="Schema-Model\dbo\Tables\Stores.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Migrations\1.0.1\001_Rename_Price_To_USD.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Migrations\1.0.1\002_Add_PriceGBP.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Migrations\1.0.1\003_No_Null_PriceGBP.sql" />
+    <None Include="Migrations\1.0.1\001_Support_GBP.sql" />
   </ItemGroup>
 </Project>
