@@ -16,6 +16,8 @@ CREATE TABLE [dbo].[Products]
 [PriceGBP] [decimal] (18, 2) NOT NULL
 )
 GO
+ALTER TABLE [dbo].[Products] ADD CONSTRAINT [CHK_Products] CHECK (([PriceUSD]<=(10000.00) AND [RecommendationId]<=(100)))
+GO
 ALTER TABLE [dbo].[Products] ADD CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED  ([ProductId])
 GO
 CREATE NONCLUSTERED INDEX [IX_Products_CategoryId] ON [dbo].[Products] ([CategoryId])
