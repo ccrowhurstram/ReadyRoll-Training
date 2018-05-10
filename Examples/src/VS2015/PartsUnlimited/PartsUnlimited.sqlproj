@@ -238,6 +238,6 @@ Table=[dbo].[Stores];
     <None Include="Schema-Model\dbo\Tables\Stores.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Migrations\1.0.1\001_Support_GBP.sql" />
+    <None Include="Migrations\1.0.1\001_20180507_Support_GBP.sql" />
   </ItemGroup>
 </Project>
