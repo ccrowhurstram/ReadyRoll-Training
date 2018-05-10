@@ -64,3 +64,5 @@ You will resolve this conflict by *modifing your migration (**perferred**)*. In 
 7. Verify the changes:
     1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13`
     2. Deploy the solution: Build > Deploy Solution
+
+To review a completed solution check out the branch: 'rr-merge-scenario2-end'
