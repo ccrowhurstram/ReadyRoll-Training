@@ -44,7 +44,7 @@ You will resolve this conflict by *modifing your migration (**perferred**)*. In 
     1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13` 
         * (see [basic example | scenario 1](basics-example.md) for how to connect to your local server)
     2. Deploy the solution: Build > Deploy Solution
-3. Merge the branch 'rr-merge-scenario2-other' into the current branch you have checked out ('rr-merge-scenario1-begin')
+3. Merge the branch 'rr-merge-scenario2-other' into the current branch you have checked out ('rr-merge-scenario2-begin')
     * Take note of the following changes that were merged to your branch:
         * Programmable Objects\dbo\Views\vwProducts.sql
         * Migrations\1.0.1\001_20180508_Default_Product_RecommendationId.sql
@@ -66,3 +66,35 @@ You will resolve this conflict by *modifing your migration (**perferred**)*. In 
     2. Deploy the solution: Build > Deploy Solution
 
 To review a completed solution check out the branch: 'rr-merge-scenario2-end'
+
+
+## Scenario 3
+
+In this scenario you will *repeat* scenario 2 but this time you resolve the conflict by modifying the incoming script.
+
+**CRITICAL**: Unless you know with *certainty* that an incoming migration has NOT been deployed to a non-developer machine, you should *never* modify an incoming migration script
+
+**Steps**
+
+1. Checkout branch 'rr-merge-scenario3-begin'
+    * This branch represents a snapshot of the code base after completing [basic example | scenario 2](basics-example.md)
+2. Ensure that your database is synchronised with the source code:
+    1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13` 
+        * (see [basic example | scenario 1](basics-example.md) for how to connect to your local server)
+    2. Deploy the solution: Build > Deploy Solution
+3. Merge the branch 'rr-merge-scenario3-other' into the current branch you have checked out ('rr-merge-scenario3-begin')
+    * Take note of the following changes that were merged to your branch:
+        * Programmable Objects\dbo\Views\vwProducts.sql
+        * Migrations\1.0.1\001_20180508_Default_Product_RecommendationId.sql
+        * Schema-Model\dbo\Tables\Products.sql
+4. Verify the merge (this will fail):
+    1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13`
+    2. Deploy the solution: Build > Deploy Solution
+5. Resolve conflict to the dbo.Products table:
+    1. Modify the script '001_20180508_Default_Product_RecommendationId.sql' so that the constraint `CHK_Products` references the column `PricesUSD` rather than `Price`
+6. Resolve conflict to the dbo.vwProducts view:
+    1. Modify the Programmable Objects\dbo\Views\vwProducts.sql to reference the PriceUSD and PriceGBP column
+7. Verify the changes:
+    1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13`
+    2. Deploy the solution: Build > Deploy Solution
+
