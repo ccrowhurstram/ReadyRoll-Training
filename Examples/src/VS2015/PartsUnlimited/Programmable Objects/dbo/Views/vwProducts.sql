@@ -14,7 +14,7 @@ AS
             p.Description,
             p.Inventory,
             p.LeadTime,
-            p.Price,
+            p.Price AS RRP,
             p.ProductArtUrl,
             p.ProductDetails,
             p.RecommendationId,

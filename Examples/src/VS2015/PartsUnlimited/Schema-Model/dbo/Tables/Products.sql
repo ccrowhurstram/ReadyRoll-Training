@@ -6,7 +6,7 @@ CREATE TABLE [dbo].[Products]
 [Description] [nvarchar] (max) NOT NULL,
 [Inventory] [int] NOT NULL,
 [LeadTime] [int] NOT NULL,
-[Price] [decimal] (18, 2) NOT NULL,
+[Price] [decimal] (16, 2) NOT NULL,
 [ProductArtUrl] [nvarchar] (1024) NOT NULL,
 [ProductDetails] [nvarchar] (max) NOT NULL,
 [RecommendationId] [int] NOT NULL,

@@ -243,4 +243,7 @@ Table=[dbo].[Stores];
   <ItemGroup>
     <None Include="Programmable Objects\dbo\Views\vwProducts.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Migrations\1.0.1\001_20180508_Products-Price.sql" />
+  </ItemGroup>
 </Project>
