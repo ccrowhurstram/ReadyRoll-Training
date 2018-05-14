@@ -153,3 +153,32 @@ To review a completed solution check out the branch: 'rr-merge-scenario4-end'
 **Are we done?**
 
 Technically, the migration scripts are merged sucessfully. Practically, there is one additional change that should be made to the `PriceGBP` column. What is it?
+
+
+## Scenario 5
+
+In this scenario you will *repeat* scenario 4 using an alternative approach to resolving the conflict. Instead of splitting the script '001_20180507_Support_GBP_Part1.sql' into two parts, you will:
+1. *rename* the script so that it runs after the incoming migration script
+2. modify the script so that it does not insert a duplicate record into the `Products` table
+
+**Steps**
+
+1. Repeat steps 1-5 in scenario 4
+2. Rename the script Migrations\1.0.1\001_20180507_Support_GBP.sql -> 001_20180509_Support_GBP.sql
+3. Modify the script '001_20180509_Support_GBP_Part1.sql':
+    * *remove* the lines starting `PRINT (N'Add 1 row to [dbo].[Products]')` through to `SET IDENTITY_INSERT [dbo].[Products] OFF;`
+        * This record is also inserted by the incoming migration script
+4. Verify the changes:
+    1. Drop the database `PartsUnlimited_Dev` from your local server `(localdb)\ProjectsV13`
+    2. Deploy the solution: Build > Deploy Solution
+
+**Are we done?**
+
+Whilst the merge now all appears to be successful, there is a problem. The record in the `Products` table that was causing us trouble, if you were to compare it to the values it had at the end of scenario 4, you would find it slightly different.
+
+To complete the scenario:
+1. Work out what is different about this record compared to it's values at end of scenario 4
+2. Explain why there is a difference
+3. Make necessary changes to '001_20180509_Support_GBP.sql' script to ensure that it's values are the same as at the end of scenario 4
+
+To review a completed solution check out the branch: 'rr-merge-scenario5-end'
