@@ -8,6 +8,7 @@ Running the `Update-Database` command the first time will create a database usin
 **Steps**
 
 1. Ensure startup project set to PartsUnlimited.Web
-2. In Package Manager Console (Tools > NuGet Package Manager > Package Manager Console):
+2. Build the solution (this ensures the required NuGet packages are restored)
+3. In Package Manager Console (Tools > NuGet Package Manager > Package Manager Console):
 	1. Set the default project to PartsUnlimited.Infrastructure
 	2. Run command Update-Database
