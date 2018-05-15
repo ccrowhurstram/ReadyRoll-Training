@@ -1,4 +1,4 @@
-# Readyroll lab - basic usage
+# Entity Framework lab - basic usage
 
 This labs walks you through using Entity Framework to perform common database change scenarios
 
