@@ -15,9 +15,7 @@ Below are the steps to perform a merge, tailored to using the dev tool...
 2. Verify the merge:
     1. Drop the database: Rams5d -Remove -Database 
 	2. Use the Ram.Series5.Db Visual studio solution to deploy the database (Build > Deploy Solution)
-3. If the deploy fails, that means the scripts are in conflict. Resolve these using the same techniques as described in the scenarios xxx. To verify your changes:
+3. If the deploy fails, that means the scripts are in conflict. Resolve these using the same techniques as described in the scenarios [Readyroll lab - merge conflicts](../ReadyRoll_Only/merge-conflicts-example.md). To verify your changes:
 	1. Drop the database: Rams5d -Remove -Database 
 	2. Use the Ram.Series5.Db Visual studio solution to deploy the database (Build > Deploy Solution)
-4. Verify the database installer embedded into the SPA:
-	1. Run: Rams5d -Build; Rams5d -Install -Database 
-	2. In ReadyRoll click 'Refresh' button - you should NOT see any data or schema changes detected
+	3. In ReadyRoll click 'Refresh' button - you should NOT see any data or schema changes detected
