@@ -1,6 +1,6 @@
 # RAM internal dev tools - basic usage
 
-This labs walks you through using RAM internal dev tools (eg PSSeries5) in conjunction with ReadyRoll to perform common database change scenarios.
+These labs walks you through using RAM internal dev tools (eg PSSeries5) in conjunction with ReadyRoll to perform common database change scenarios.
 
 Note: Internally RAM internal dev tools uses Entity Framework migrations to generate the schema change migrations.
 
