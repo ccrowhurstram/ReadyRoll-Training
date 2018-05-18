@@ -36,4 +36,7 @@
 
 * [Intro video](https://sec.ch9.ms/ch9/9fe5/2759956c-adf4-4997-a1ff-6a39a8179fe5/200RedgateDataTools_high.mp4)
 * [Extending DevOps practices to SQL Server databases with Redgate's ReadyRoll](https://www.youtube.com/watch?v=jH4ZCU3Oydg)
+* Summary notes: [What it ReadyRoll](what-is-ready-roll.md)
+
+
 
