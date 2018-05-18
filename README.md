@@ -21,6 +21,7 @@ This repo includes:
 2. Work through [ReadyRoll labs](Examples/ReadyRoll_Only/readme.md)
 3. Work through [Entity Framework migrations labs](Examples/EntityFramework_Only/readme.md)
 4. Work through [Readyroll + RAM internal dev tools labs](Examples/RR_Plus_DevTool/readme.md)
+5. Read [Dev tools workflow](devtool-workflow.md)
 
 
 ## Presenter notes
