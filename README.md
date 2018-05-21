@@ -26,16 +26,16 @@ This repo includes:
 
 ## Presenter notes
 
-* Workshop 1 (estimate 3 hrs):
+* Workshop 1 - ReadyRoll basic scenarios (estimate 3 hrs):
     * Talk through [Intro to ReadyRoll](intro-db-development-using-readyroll.md)
     * Let team work through [ReadyRoll lab - basic usage](Examples/ReadyRoll_Only/basics-example.md)
-* Workshop 2 (estimate 4 hrs):
+* Workshop 2 - ReadyRoll merge scenarios (estimate 4 hrs):
     * Talk through [What is ReadyRoll](what-is-ready-roll.md)
     * Give a quick tour of the Ram.Series5.Db Visual Studio solution and the various file in use
     * Give a practical example of how ReadyRoll uses the Shadown Database to detect and generate migration scripts
     * Let team work through [ReadyRoll lab - merge conflicts](Examples/ReadyRoll_Only/merge-conflicts-example.md)
-* Workshop 3 (estimate 4 hrs):
+* Workshop 3 - EF + Dev tool (estimate 4 hrs):
     * Let team work through [Entity Framework lab - basic usage](Examples/EntityFramework_Only/basics-example.md)
-    * Talk through day-to-day workflow
+    * Talk through day-to-day workflow using dev tool
     * Let team work through [RAM internal dev tools - basic usage](Examples/RR_Plus_DevTool/basics-example.md)
     * Talk through [RAM internal dev tools - merge conflicts](Examples/RR_Plus_DevTool/merge-conflicts-example.md)
