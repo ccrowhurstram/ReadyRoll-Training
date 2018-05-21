@@ -165,7 +165,7 @@ In this scenario you will *repeat* scenario 4 using an alternative approach to r
 
 1. Repeat steps 1-5 in scenario 4
 2. Rename the script Migrations\1.0.1\001_20180507_Support_GBP.sql -> 001_20180509_Support_GBP.sql
-3. Modify the script '001_20180509_Support_GBP_Part1.sql':
+3. Modify the script '001_20180509_Support_GBP.sql':
     * *remove* the lines starting `PRINT (N'Add 1 row to [dbo].[Products]')` through to `SET IDENTITY_INSERT [dbo].[Products] OFF;`
         * This record is also inserted by the incoming migration script
 4. Verify the changes:

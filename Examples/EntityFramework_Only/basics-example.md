@@ -8,7 +8,7 @@ This labs walks you through using Entity Framework to perform common database ch
 
 1. Open the Visual Studio solution: Examples\src\VS2015.EntityFramework\PartsUnlimited-2015.sln
 2. Deploy database by following steps in [PartsUnlimited.Infrastructure/ReadMe.md](../src/VS2015.EntityFramework/PartsUnlimited.Infrastructure/ReadMe.md)
-3. Confirm that the database was created `PartsUnlimited_Dev` database
+3. Confirm that the database was created `PartsUnlimitedEF_Dev` database
     * connection details:
         * server - (localdb)\ProjectsV13
         * database - PartsUnlimitedEF_Dev
