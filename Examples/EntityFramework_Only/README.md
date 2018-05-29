@@ -7,4 +7,4 @@
 
 ## Labs
 
-* [readyroll basics](ReadyRoll_Only/basics-example.md)
+* [readyroll basics](basics-example.md)
