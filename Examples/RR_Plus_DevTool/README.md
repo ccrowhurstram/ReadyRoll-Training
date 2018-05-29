@@ -9,5 +9,5 @@
 
 ## Labs
 
-* [`Rams5dev` tool basics](RR_Plus_DevTool/basics-example.md)
-* [`Rams5dev` tool merge conflicts example](RR_Plus_DevTool/merge-conflicts-example.md)
+* [`Rams5dev` tool basics](basics-example.md)
+* [`Rams5dev` tool merge conflicts example](merge-conflicts-example.md)
