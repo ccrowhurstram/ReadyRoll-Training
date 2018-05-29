@@ -18,9 +18,9 @@ This repo includes:
 ## Getting started
 
 1. Read [introduction to database development using ReadyRoll](intro-db-development-using-readyroll.md)
-2. Work through [ReadyRoll labs](Examples/ReadyRoll_Only/readme.md)
-3. Work through [Entity Framework migrations labs](Examples/EntityFramework_Only/readme.md)
-4. Work through [Readyroll + RAM internal dev tools labs](Examples/RR_Plus_DevTool/readme.md)
+2. Work through [ReadyRoll labs](Examples/ReadyRoll_Only/README.md)
+3. Work through [Entity Framework migrations labs](Examples/EntityFramework_Only/README.md)
+4. Work through [Readyroll + RAM internal dev tools labs](Examples/RR_Plus_DevTool/README.md)
 5. Read [Dev tools workflow](devtool-workflow.md)
 
 
